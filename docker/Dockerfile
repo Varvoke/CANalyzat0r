@@ -19,7 +19,7 @@ RUN cat /tmp/Trolltech.conf >> ~/.config/Trolltech.conf && \
 ENV QT_X11_NO_MITSHM 1
 
 # Clone the CANalyzat0r repository
-RUN git clone https://github.com/schutzwerk/CANalyzat0r /opt/CANalyzat0r
+RUN git clone https://github.com/Varvoke/CANalyzat0r /opt/CANalyzat0r
 
 # Install the CANalyzat0r dependencies using the bundled script
 RUN /opt/CANalyzat0r/install_requirements.sh
