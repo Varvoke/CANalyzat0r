@@ -10,7 +10,6 @@ RUN apt-get update && \
     kmod
 
 # Prepare the GUI
-RUN apt-get update && apt-get install -y xvfb
 RUN mkdir ~/.config
 ADD Trolltech.conf /tmp/Trolltech.conf
 RUN cat /tmp/Trolltech.conf >> ~/.config/Trolltech.conf && \
